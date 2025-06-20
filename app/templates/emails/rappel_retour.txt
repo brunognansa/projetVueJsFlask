@@ -1,0 +1,22 @@
+Rappel de retour
+
+Bonjour {{ utilisateur.prenom }} {{ utilisateur.nom }},
+
+Nous vous rappelons que le livre suivant doit être retourné dans {{ jours_restants }} jours :
+
+Titre : {{ livre.titre }}
+Auteur : {{ livre.auteur }}
+ISBN : {{ livre.isbn }}
+Date d'emprunt : {{ emprunt.date_emprunt.strftime('%d/%m/%Y') }}
+Date de retour prévue : {{ emprunt.date_retour_prevue.strftime('%d/%m/%Y') }}
+
+N'oubliez pas de retourner ce livre avant la date d'échéance pour éviter des pénalités de retard.
+
+Si vous avez déjà retourné ce livre, veuillez ignorer ce message.
+
+Cordialement,
+L'équipe de la bibliothèque
+
+---
+Ce message a été envoyé automatiquement. Merci de ne pas y répondre.
+© {{ emprunt.date_emprunt.year }} Bibliothèque. Tous droits réservés.

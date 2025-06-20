@@ -1,0 +1,6 @@
+flask               # Framework web principal
+flask-restful       # Création d'APIs RESTful
+flask-cors          # Gestion des requêtes cross-origin
+python-dotenv       # Gestion des variables d'environnement
+pytest              # Tests unitaires
+requests            # Requêtes HTTP entre services

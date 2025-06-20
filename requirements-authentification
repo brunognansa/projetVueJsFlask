@@ -1,0 +1,8 @@
+flask
+flask-sqlalchemy    # ORM pour base de données
+flask-migrate       # Migrations de la base de données
+flask-bcrypt        # Hash des mots de passe
+flask-jwt-extended  # Génération/validation de tokens JWT
+psycopg2            # Connexion à PostgreSQL
+marshmallow         # Sérialisation/désérialisation des données
+email-validator     # Validation des emails

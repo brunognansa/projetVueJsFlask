@@ -1,0 +1,22 @@
+Confirmation d'emprunt
+
+Bonjour {{ utilisateur.prenom }} {{ utilisateur.nom }},
+
+Nous vous confirmons l'emprunt du livre suivant :
+
+Titre : {{ livre.titre }}
+Auteur : {{ livre.auteur }}
+ISBN : {{ livre.isbn }}
+Date d'emprunt : {{ emprunt.date_emprunt.strftime('%d/%m/%Y') }}
+Date de retour prévue : {{ emprunt.date_retour_prevue.strftime('%d/%m/%Y') }}
+
+Nous vous rappelons que vous devez retourner ce livre avant la date de retour prévue pour éviter des pénalités.
+
+Bonne lecture !
+
+Cordialement,
+L'équipe de la bibliothèque
+
+---
+Ce message a été envoyé automatiquement. Merci de ne pas y répondre.
+© {{ emprunt.date_emprunt.year }} Bibliothèque. Tous droits réservés.

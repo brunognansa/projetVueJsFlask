@@ -1,0 +1,21 @@
+Confirmation de retour
+
+Bonjour {{ utilisateur.prenom }} {{ utilisateur.nom }},
+
+Nous vous confirmons que le livre suivant a bien été retourné.
+
+Titre : {{ livre.titre }}
+Auteur : {{ livre.auteur }}
+ISBN : {{ livre.isbn }}
+Date d'emprunt : {{ emprunt.date_emprunt.strftime('%d/%m/%Y') }}
+Date de retour prévue : {{ emprunt.date_retour_prevue.strftime('%d/%m/%Y') }}
+Date de retour effective : {{ emprunt.date_retour_effective.strftime('%d/%m/%Y') }}
+
+Nous vous remercions d'avoir utilisé notre service de bibliothèque et espérons vous revoir bientôt !
+
+Cordialement,
+L'équipe de la bibliothèque
+
+---
+Ce message a été envoyé automatiquement. Merci de ne pas y répondre.
+© {{ emprunt.date_retour_effective.year }} Bibliothèque. Tous droits réservés.
