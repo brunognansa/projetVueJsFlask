@@ -1,0 +1,6 @@
+class Book(db.Model):
+    // ...existing code...
+    description = db.Column(db.Text, nullable=True)
+    genre = db.Column(db.String(50), nullable=True)
+    cover_image = db.Column(db.String(200), nullable=True)
+    // ...existing code...
